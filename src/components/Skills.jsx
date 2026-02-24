@@ -1,9 +1,9 @@
 import React from "react";
 
 const SkillItem = ({ name,  iconClass }) => (
-  <div className="bg-blue-950 p-4 rounded-lg flex flex-col items-center justify-center text-center shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+  <div className="bg-gray-200 p-4 rounded-lg flex flex-col items-center justify-center text-center shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
     <i className={`${iconClass} text-5xl mb-3`}></i>
-    <h3 className="font-semibold text-white">{name}</h3>
+    <h3 className="font-semibold ">{name}</h3>
     <p className="text-sm text-white"></p>
   </div>
 );
@@ -45,9 +45,9 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gray-700 overflow-hidden">
+    <section id="skills" className="py-20 bg-gray-100 overflow-hidden">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-12 text-white"> Skills & Technologies</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 "> Skills & Technologies</h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {skillsData.map((skill, index) => (
