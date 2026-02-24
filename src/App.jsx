@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./components/Home";
 import Header from "./components/Header";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer";
@@ -28,6 +29,7 @@ function App() {
       <main>
         <Home />
         <About />
+        <Skills />
         <Projects projects={projectData} />
         <Contact />
       </main>
