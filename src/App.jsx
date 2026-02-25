@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import AnimatedSection from "./components/AnimatedSection"; 
 import Projects from "./components/Projects";
 import Resume from "./components/Resume.jsx";
 import Contact from "./components/Contact.jsx";
@@ -31,12 +32,24 @@ function App() {
     <div className="font-sans bg-white">
       <Header />
       <main>
-        <Home />
-        <About />
-        <Skills />
-        <Projects projects={projectData} />
-        <Resume />
-        <Contact />
+        <animatedSection>
+          <Home />
+        </animatedSection>
+        <animatedSection>
+          <About />
+        </animatedSection>
+        <animatedSection>
+          <Skills />
+        </animatedSection>
+        <animatedSection>
+          <Projects projects={projectData} />
+        </animatedSection>
+        <animatedSection>
+          <Resume />
+        </animatedSection>
+        <animatedSection>
+          <Contact />
+        </animatedSection>
       </main>
       <Footer />
     </div>
