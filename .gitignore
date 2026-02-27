@@ -23,7 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 
-# Ignore specific images in the src/images folder
-src/images/zafar.jpeg
-src/images/zafar2.jpeg
 
