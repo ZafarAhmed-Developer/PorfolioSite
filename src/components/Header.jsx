@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import logo from "../assets/images/logo.jpeg";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -67,7 +67,13 @@ export default function Header() {
     <header className="bg-gray-800 text-white shadow-md sticky top-0 z-50">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="text-2xl font-bold">
-          <a href="#home">Portfolio</a>
+          <a href="#home">
+            <img
+              src={logo}
+              alt="Zafar's Logo"
+              className="w-10 h-10 inline-block mr-2 rounded-full"
+            />
+          </a>
         </div>
 
         <ul className="hidden md:flex space-x-6">{navLinks}</ul>
