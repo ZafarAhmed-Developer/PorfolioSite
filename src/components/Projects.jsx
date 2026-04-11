@@ -65,10 +65,10 @@ export default function Projects() {
       githubUrl: "https://github.com/ZafarAhmed-Fat-12/todo-app",
     },
     {
-      title: "5. currency converter",
+      title: "5. Currency converter",
       description:
-        "A responsive web application that converts currency values between different countries using real-time exchange rates.",
-      tech: ["CSS", "JavaScript", "API"],
+        "A responsive web application designed for instant currency conversion, catering to travelers, businesses, and online shoppers. This tool utilizes an external API to fetch up-to-the-minute exchange rates, ensuring accuracy. Technologies used: HTML, CSS, and JavaScript.",
+      tech: ["HTML", "CSS", "JavaScript"],
       githubUrl: "https://github.com/ZafarAhmed-Fat-12/currency-converter",
     },
     {
