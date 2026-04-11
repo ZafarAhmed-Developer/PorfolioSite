@@ -1,6 +1,6 @@
 import React from "react";
 const ProjectCard = ({ title, description, tech, githubUrl }) => (
-  <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+  <div className="bg-blue-100 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
     <div className="p-6">
       <h3 className="text-2xl font-bold mb-2 text-deep-blue">{title}</h3>
       <p className="text-gray-700 mb-4">{description}</p>
@@ -34,9 +34,9 @@ const ProjectCard = ({ title, description, tech, githubUrl }) => (
 export default function Projects() {
   const myProjects = [
     {
-      title: "1. Personal Portfolio Website",
+      title: "1.  Portfolio Website",
       description:
-        "A responsive personal portfolio built from scratch to showcase my skills, projects, and experience. Designed to be clean, modern, and easy to navigate.",
+        " A complete digital resume and project showcase, designed to provide a clean and engaging overview of my capabilities as a Web developer. Key features include a fully responsive and animated UI, a dynamic project gallery with links to GitHub repositories ",
       tech: ["React", "Tailwind CSS", "Vite"],
       githubUrl:
         "https://github.com/ZafarAhmed-Fat-12/HZSoftwareSolution_PorfolioSite",
@@ -44,7 +44,7 @@ export default function Projects() {
     {
       title: "2. Image Gallery ",
       description:
-        "A modern , front-end image gallery application that integrates directly with the pexels API for dynamic content. Features include on the-fly catagory filtering, a responsive grid layout, and a polished light box viewer, all built with pure HTML, CSS and JavaScript",
+        "A modern , front-end image gallery application that integrates directly with the pexels API for dynamic content. Features include on the-fly catagory filtering, a responsive grid layout,  a polished light box viewer, and also button icons for preview and next all built with pure HTML, CSS and JavaScript",
       tech: ["HTML", "CSS", "JavaScript"],
       githubUrl:
         "https://github.com/ZafarAhmed-Fat-12/HZSoftwareSolutions_ImageGallery",
@@ -74,8 +74,8 @@ export default function Projects() {
     {
       title: "6. Calculator",
       description:
-        "A simple calculator application with a clean and intuitive user interface.",
-      tech: ["React", "JavaScript", "Tailwind CSS"],
+        " Modern Mobile-Styled Calculator, a web-based application designed to provide a premium smartphone-like experience on any device focuses on User Experience (UX) by integrating real-time feedback and adaptive UI elements typically found in high-end mobile operating systems",
+      tech: ["HTML", "CSS", "JavaScript"],
       githubUrl: "https://github.com/ZafarAhmed-Fat-12/calculator",
     },
   ];
