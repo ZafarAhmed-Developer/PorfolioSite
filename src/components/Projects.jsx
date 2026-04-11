@@ -72,11 +72,11 @@ export default function Projects() {
       githubUrl: "https://github.com/ZafarAhmed-Fat-12/currency-converter",
     },
     {
-      title: "6. E-commerce ",
+      title: "6. Calculator",
       description:
-        "An e-commerce application that allows users to browse products, add items to a cart, and simulate a checkout process.",
+        "A simple calculator application with a clean and intuitive user interface.",
       tech: ["React", "JavaScript", "Tailwind CSS"],
-      githubUrl: "https://github.com/ZafarAhmed-Fat-12/e-commerce",
+      githubUrl: "https://github.com/ZafarAhmed-Fat-12/calculator",
     },
   ];
 
