@@ -31,8 +31,8 @@ export default function Skills() {
       iconClass: "devicon-tailwindcss-plain colored",
     },
     {
-      name: "Next.js",
-      iconClass: "devicon-nextjs-original colored",
+      name: "python",
+      iconClass: "devicon-python-plain colored",
     },
     {
       name: "Git",
