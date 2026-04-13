@@ -45,7 +45,6 @@ This project was built using the following technologies:
 - **Tailwind CSS:** A utility-first CSS framework for rapid, custom UI development.
 - **Devicon & Font Awesome:** For clean, professional icons for skills and social media links.
 - **Git & GitHub:** For version control and source code management.
-
 ---
 
 ## Project Structure & Component Breakdown
