@@ -1,67 +1,144 @@
-import { ArrowRight } from 'lucide-react';
+import { Code2, Zap, Target, Layers } from 'lucide-react';
+import profileImage from '../assets/images/zafar2.jpeg';
+export default function About() {
 
-/**
- * Design Philosophy: Minimalist Modern Professional
- * - Bold typography hierarchy with generous whitespace
- * - Asymmetric layout with left-aligned content
- * - Subtle teal accent for CTA buttons
- */
 
-export default function Hero() {
   return (
-    <section id="home" className="py-20 md:py-32 bg-gradient-to-br from-white to-gray-50">
+    <section id="about" className="py-20 md:py-32 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="space-y-6">
-            <div className="space-y-2">
-              <p className="text-teal-600 font-semibold tracking-wide uppercase text-sm">
-                Welcome to my portfolio
-              </p>
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-                Hi, I'm a Developer
-              </h1>
-            </div>
 
-            <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-              I create beautiful, responsive web applications with modern technologies. 
-              Passionate about clean code, user experience, and solving complex problems.
-            </p>
+        <div className="mb-20 space-y-8 text-center">
+          <div className="space-y-4">
+            <h1 className="text-6xl md:text-7xl font-black text-gray-900 leading-tight">
+              Zafar Ahmed
+            </h1>
+            <h2 className="text-3xl md:text-4xl font-bold text-teal-600">
+              MERN Stack  Developer
+            </h2>
+            <div className="w-20 h-1 bg-teal-600 rounded-full"></div>
+          </div>
+        </div>
 
-            <div className="flex gap-4 pt-4">
-              <a
-                href="#projects"
-                className="inline-flex items-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors duration-200"
-              >
-                View My Work
-                <ArrowRight size={20} />
-              </a>
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 border-2 border-gray-300 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:border-teal-600 hover:text-teal-600 transition-colors duration-200"
-              >
-                Get In Touch
-              </a>
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+
+          <div className="flex justify-center">
+            <div className="relative w-80 h-80 rounded-lg overflow-hidden shadow-lg border-4 border-teal-100">
+              <img
+                src={profileImage}
+                alt="Zafar Ahmed - Full Stack Developer"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
-          {/* Right Side - Decorative Element */}
-          <div className="hidden md:flex justify-center items-center">
-            <div className="relative w-64 h-64">
-              {/* Gradient Circle Background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-teal-100 to-blue-100 rounded-full opacity-50"></div>
-              <div className="absolute inset-8 bg-gradient-to-br from-teal-50 to-blue-50 rounded-full"></div>
-              
-              {/* Centered Text */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-4xl font-bold text-teal-600">5+</p>
-                  <p className="text-gray-600 font-medium">Years Experience</p>
+          <div className="space-y-6">
+            <div className="space-y-4">
+              <h3 className="text-3xl font-bold text-gray-900">About Me</h3>
+              <p className="text-lg text-gray-700 leading-relaxed font-medium">
+                As a Full Stack Developer, I thrive on transforming complex problems into
+                elegant, efficient digital solutions. While I enjoy crafting responsive UIs
+                with React and Tailwind CSS, my core strength is in backend design—designing
+                secure APIs and managing data with precision. My background in computer science
+                fundamentals allows me to approach every project with a problem-solving mindset,
+                ensuring that the applications I build are not just functional, but high-performing and scalable.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-12 mt-20">
+          <div className="space-y-4">
+            <h3 className="text-4xl font-bold text-gray-900">My Ambitions</h3>
+            <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">
+              I am driven by the challenge of solving intricate problems through clean, optimized code.
+              My goal is to master backend infrastructure and database management, ensuring that every
+              application I build is powered by a secure and high-speed core.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+
+            <div className="p-8 border-2 border-gray-200 rounded-lg hover:border-teal-600 hover:shadow-lg transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-teal-50 rounded-lg group-hover:bg-teal-600 transition-colors duration-300">
+                  <Code2 className="text-teal-600 group-hover:text-white transition-colors duration-300" size={28} />
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">Clean & Optimized Code</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    Writing efficient, maintainable code that solves complex problems with elegance and simplicity.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="p-8 border-2 border-gray-200 rounded-lg hover:border-teal-600 hover:shadow-lg transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-teal-50 rounded-lg group-hover:bg-teal-600 transition-colors duration-300">
+                  <Zap className="text-teal-600 group-hover:text-white transition-colors duration-300" size={28} />
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">Backend Infrastructure</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    Mastering server architecture, APIs, and system design to build powerful backend solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="p-8 border-2 border-gray-200 rounded-lg hover:border-teal-600 hover:shadow-lg transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-teal-50 rounded-lg group-hover:bg-teal-600 transition-colors duration-300">
+                  <Target className="text-teal-600 group-hover:text-white transition-colors duration-300" size={28} />
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">Database Management</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    Designing secure, high-speed databases that ensure data integrity and optimal performance.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="p-8 border-2 border-gray-200 rounded-lg hover:border-teal-600 hover:shadow-lg transition-all duration-300 group">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-teal-50 rounded-lg group-hover:bg-teal-600 transition-colors duration-300">
+                  <Layers className="text-teal-600 group-hover:text-white transition-colors duration-300" size={28} />
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">Secure & Fast Applications</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    Building applications with security at the core and performance as a priority.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+
+        <div className="mt-20 p-8 bg-gradient-to-r from-teal-50 to-blue-50 rounded-lg border border-teal-200">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">Core Values</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div>
+              <p className="font-bold text-teal-600 text-lg mb-2">Clean Code</p>
+              <p className="text-gray-700">Writing maintainable, readable, and efficient code that stands the test of time.</p>
+            </div>
+            <div>
+              <p className="font-bold text-teal-600 text-lg mb-2">Performance</p>
+              <p className="text-gray-700">Building fast, scalable applications that deliver exceptional user experiences.</p>
+            </div>
+            <div>
+              <p className="font-bold text-teal-600 text-lg mb-2">Continuous Learning</p>
+              <p className="text-gray-700">Staying updated with latest technologies and best practices in the industry.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
