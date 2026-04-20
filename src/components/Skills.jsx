@@ -1,18 +1,12 @@
-/**
- * Design Philosophy: Minimalist Modern Professional
- * - Grid-based skill cards with subtle borders
- * - Teal accent for category headers
- * - Clean typography hierarchy
- */
 
 const skillCategories = [
   {
     category: 'Frontend',
-    skills: ['React',  'Tailwind CSS', 'HTML/CSS', 'JavaScript'],
+    skills: ['React', 'Tailwind CSS', 'HTML/CSS', 'JavaScript'],
   },
   {
     category: 'Backend',
-    skills: ['Node.js', 'Express', 'Python', 'MongoDB', ],
+    skills: ['Node.js', 'Express', 'Python', 'MongoDB',],
   },
   {
     category: 'Tools & Platforms',
@@ -20,7 +14,7 @@ const skillCategories = [
   },
   {
     category: 'Soft Skills',
-    skills: ['Problem Solving', 'Communication', 'Team Collaboration',  'Leadership'],
+    skills: ['Problem Solving', 'Communication', 'Team Collaboration', 'Leadership'],
   },
 ];
 
@@ -37,7 +31,6 @@ export default function Skills() {
           </p>
         </div>
 
-        {/* Skills Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category, idx) => (
             <div
