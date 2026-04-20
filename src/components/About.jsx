@@ -1,33 +1,65 @@
-import React from "react";
-import profileImage from "../assets/images/zafar2.jpeg"; 
+import { ArrowRight } from 'lucide-react';
 
-export default function About() {
+/**
+ * Design Philosophy: Minimalist Modern Professional
+ * - Bold typography hierarchy with generous whitespace
+ * - Asymmetric layout with left-aligned content
+ * - Subtle teal accent for CTA buttons
+ */
+
+export default function Hero() {
   return (
-    <section id="about" className="py-20  bg-gray-200">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
+    <section id="home" className="py-20 md:py-32 bg-gradient-to-br from-white to-gray-50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <p className="text-teal-600 font-semibold tracking-wide uppercase text-sm">
+                Welcome to my portfolio
+              </p>
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+                Hi, I'm a Developer
+              </h1>
+            </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-10">
-          <div className="md:w-1/3 flex justify-center">
-            <img
-              src={profileImage}
-              alt="A portrait of Zafar, the developer"
-              className="rounded-full w-64 h-64 object-cover shadow-lg"
-            />
+            <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
+              I create beautiful, responsive web applications with modern technologies. 
+              Passionate about clean code, user experience, and solving complex problems.
+            </p>
+
+            <div className="flex gap-4 pt-4">
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors duration-200"
+              >
+                View My Work
+                <ArrowRight size={20} />
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 border-2 border-gray-300 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:border-teal-600 hover:text-teal-600 transition-colors duration-200"
+              >
+                Get In Touch
+              </a>
+            </div>
           </div>
 
-          <div className="md:w-2/3 text-left">
-            <p className="text-gray-900 text-lg">
-              Hello! I'm a passionate frontend developer with experience in
-              creating modern and responsive web applications using technologies
-              like React, Next.js, and Tailwind CSS. I love solving problems and
-              building beautiful, user-friendly interfaces.
-            </p>
-            <p className="text-gray-900 text-lg mt-4">
-              My goal is to build seamless and engaging user interfaces from
-              concept to deployment, with a focus on writing clean and efficient
-              code.
-            </p>
+          {/* Right Side - Decorative Element */}
+          <div className="hidden md:flex justify-center items-center">
+            <div className="relative w-64 h-64">
+              {/* Gradient Circle Background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-teal-100 to-blue-100 rounded-full opacity-50"></div>
+              <div className="absolute inset-8 bg-gradient-to-br from-teal-50 to-blue-50 rounded-full"></div>
+              
+              {/* Centered Text */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center">
+                  <p className="text-4xl font-bold text-teal-600">5+</p>
+                  <p className="text-gray-600 font-medium">Years Experience</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

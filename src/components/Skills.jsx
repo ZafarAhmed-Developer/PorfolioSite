@@ -1,65 +1,61 @@
-import React from "react";
+/**
+ * Design Philosophy: Minimalist Modern Professional
+ * - Grid-based skill cards with subtle borders
+ * - Teal accent for category headers
+ * - Clean typography hierarchy
+ */
 
-const SkillItem = ({ name, iconClass }) => (
-  <div className="bg-gray-200 p-4 rounded-lg flex flex-col items-center justify-center text-center shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
-    <i className={`${iconClass} text-5xl mb-3`}></i>
-    <h3 className="font-semibold ">{name}</h3>
-    <p className="text-sm text-white"></p>
-  </div>
-);
+const skillCategories = [
+  {
+    category: 'Frontend',
+    skills: ['React',  'Tailwind CSS', 'HTML/CSS', 'JavaScript'],
+  },
+  {
+    category: 'Backend',
+    skills: ['Node.js', 'Express', 'Python', 'MongoDB', ],
+  },
+  {
+    category: 'Tools & Platforms',
+    skills: ['Git', 'Netlify', 'VS Code', 'GitHub'],
+  },
+  {
+    category: 'Soft Skills',
+    skills: ['Problem Solving', 'Communication', 'Team Collaboration',  'Leadership'],
+  },
+];
 
 export default function Skills() {
-  const skillsData = [
-    {
-      name: "HTML5",
-      iconClass: "devicon-html5-plain colored",
-    },
-    {
-      name: "CSS3",
-      iconClass: "devicon-css3-plain colored",
-    },
-    {
-      name: "JavaScript",
-      iconClass: "devicon-javascript-plain colored",
-    },
-    {
-      name: "React",
-      iconClass: "devicon-react-original colored",
-    },
-    {
-      name: "Tailwind CSS",
-      iconClass: "devicon-tailwindcss-plain colored",
-    },
-    {
-      name: "Python",
-      iconClass: "devicon-python-plain colored",
-    },
-    {
-      name: "Git",
-      iconClass: "devicon-git-plain colored",
-    },
-    {
-      name: "C++",
-      iconClass: "devicon-cplusplus-plain colored",
-    },
-  ];
-
   return (
-    <section id="skills" className="py-20 bg-gray-100 overflow-hidden">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-12 ">
-          {" "}
-          Skills & Technologies
-        </h2>
+    <section id="skills" className="py-20 md:py-32 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="mb-16 space-y-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Skills & Expertise</h2>
+          <div className="w-16 h-1 bg-teal-600 rounded-full"></div>
+          <p className="text-xl text-gray-600 max-w-2xl">
+            A comprehensive overview of my technical skills and professional capabilities.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-          {skillsData.map((skill, index) => (
-            <SkillItem
-              key={index}
-              name={skill.name}
-              level={skill.level}
-              iconClass={skill.iconClass}
-            />
+        {/* Skills Grid */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {skillCategories.map((category, idx) => (
+            <div
+              key={idx}
+              className="p-6 border border-gray-200 rounded-lg hover:border-teal-300 hover:shadow-lg transition-all duration-200"
+            >
+              <h3 className="text-xl font-bold text-teal-600 mb-4">{category.category}</h3>
+              <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill, skillIdx) => (
+                  <span
+                    key={skillIdx}
+                    className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-teal-100 hover:text-teal-700 transition-colors duration-200"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
