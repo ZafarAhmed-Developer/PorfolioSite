@@ -196,20 +196,20 @@ export default function About() {
         </div>
 
 
-        <div className="mt-20 p-8 bg-gradient-to-r from-teal-50 to-blue-50 rounded-lg border border-teal-200">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">Core Values</h3>
+        <div className="mt-20 p-8 bg-slate-900 border border-teal-200">
+          <h3 className="text-2xl font-bold text-white mb-6">Core Values</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <div>
               <p className="font-bold text-teal-600 text-lg mb-2">Clean Code</p>
-              <p className="text-gray-700">Writing maintainable, readable, and efficient code that stands the test of time.</p>
+              <p className="text-slate-400">Writing maintainable, readable, and efficient code that stands the test of time.</p>
             </div>
             <div>
               <p className="font-bold text-teal-600 text-lg mb-2">Performance</p>
-              <p className="text-gray-700">Building fast, scalable applications that deliver exceptional user experiences.</p>
+              <p className="text-slate-400">Building fast, scalable applications that deliver exceptional user experiences.</p>
             </div>
             <div>
               <p className="font-bold text-teal-600 text-lg mb-2">Continuous Learning</p>
-              <p className="text-gray-700">Staying updated with latest technologies and best practices in the industry.</p>
+              <p className="text-slate-400">Staying updated with latest technologies and best practices in the industry.</p>
             </div>
           </div>
         </div>
