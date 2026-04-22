@@ -74,7 +74,7 @@ export default function Projects() {
         "A complete digital resume and project showcase with fully responsive and animated UI, dynamic project gallery with GitHub links, and smooth scrolling navigation.",
       tech: ["React", "Tailwind CSS", "Vite"],
       githubUrl:
-        "https://github.com/ZafarAhmed-Fat-12/HZSoftwareSolution_PorfolioSite",
+        "https://github.com/ZafarAhmed-Developer/PorfolioSite",
     },
     {
       title: "Image Gallery",
@@ -90,28 +90,28 @@ export default function Projects() {
         "React application for generating secure passwords with customizable options including length, character sets, uppercase, lowercase, numbers, and symbols.",
       tech: ["React", "Tailwind CSS", "Vite"],
       githubUrl:
-        "https://github.com/ZafarAhmed-Fat-12/random-password-generator",
+        "https://github.com/ZafarAhmed-Developer/random-password-generator",
     },
     {
       title: "Todo List App",
       description:
         "Responsive task management application with create, edit, delete, and mark complete features. Includes local storage integration for data persistence.",
       tech: ["React", "Tailwind CSS", "LocalStorage"],
-      githubUrl: "https://github.com/ZafarAhmed-Fat-12/todo-app",
+      githubUrl: "https://github.com/ZafarAhmed-Developer/ToDoApp_list",
     },
     {
       title: "Currency Converter",
       description:
         "Responsive currency conversion tool for travelers and businesses. Utilizes external API for real-time exchange rates supporting multiple currencies.",
       tech: ["HTML", "CSS", "JavaScript", "API"],
-      githubUrl: "https://github.com/ZafarAhmed-Fat-12/currency-converter",
+      githubUrl: "https://github.com/ZafarAhmed-Developer/currency-converter",
     },
     {
       title: "Calculator",
       description:
         "Modern mobile-styled calculator providing premium smartphone-like experience with real-time feedback and adaptive UI elements.",
       tech: ["HTML", "CSS", "JavaScript"],
-      githubUrl: "https://github.com/ZafarAhmed-Fat-12/calculator",
+      githubUrl: "https://github.com/ZafarAhmed-Developer/calculator",
     },
   ];
 
@@ -157,7 +157,7 @@ export default function Projects() {
         <div className="mt-20 text-center">
           <p className="text-slate-400 mb-6">Want to see more projects?</p>
           <a
-            href="https://github.com/ZafarAhmed-Fat-12"
+            href="https://github.com/ZafarAhmed-Developer"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-teal-500 text-white font-bold rounded-full hover:bg-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
