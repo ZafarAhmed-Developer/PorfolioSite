@@ -22,7 +22,7 @@ export default function Footer() {
     },
     {
       name: "GitHub",
-      href: "https://github.com/ZafarAhmed-Fat-12",
+      href: "https://github.com/ZafarAhmed-Developer",
       iconClass: "devicon-github-original",
     },
 

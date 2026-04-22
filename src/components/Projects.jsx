@@ -82,7 +82,7 @@ export default function Projects() {
         "Modern front-end image gallery integrating Pexels API with dynamic content, category filtering, responsive grid layout, and polished lightbox viewer.",
       tech: ["HTML", "CSS", "JavaScript", "API"],
       githubUrl:
-        "https://github.com/ZafarAhmed-Developer/ImageGallery",
+        "https://github.com/ZafarAhmed-Developer/Image-Gallery",
     },
     {
       title: "Random Password Generator",
@@ -90,7 +90,7 @@ export default function Projects() {
         "React application for generating secure passwords with customizable options including length, character sets, uppercase, lowercase, numbers, and symbols.",
       tech: ["React", "Tailwind CSS", "Vite"],
       githubUrl:
-        "https://github.com/ZafarAhmed-Developer/random-password-generator",
+        "https://github.com/ZafarAhmed-Developer/Random-Password-Generator",
     },
     {
       title: "Todo List App",
@@ -111,7 +111,7 @@ export default function Projects() {
       description:
         "Modern mobile-styled calculator providing premium smartphone-like experience with real-time feedback and adaptive UI elements.",
       tech: ["HTML", "CSS", "JavaScript"],
-      githubUrl: "https://github.com/ZafarAhmed-Developer/calculator",
+      githubUrl: "https://github.com/ZafarAhmed-Developer/Calculator",
     },
   ];
 
@@ -160,7 +160,7 @@ export default function Projects() {
             href="https://github.com/ZafarAhmed-Developer"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-teal-500 text-white font-bold rounded-full hover:bg-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-teal-500 text-white  rounded-full hover:bg-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             <ExternalLink size={20} />
             Visit GitHub Profile

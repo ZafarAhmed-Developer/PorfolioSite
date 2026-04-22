@@ -10,6 +10,7 @@ const nav = [
   { href: "#skills", label: "Skills" },
   { href: "#resume", label: "Resume" },
   { href: "#projects", label: "Projects" },
+  { href: "#blogs", label: "Blogs" },
   { href: "#contact", label: "Contact" },
 ];
 export default function Header() {
@@ -18,7 +19,7 @@ export default function Header() {
   return (
     <header className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white shadow-lg sticky top-0 z-50 border-b border-teal-500/20">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
+
         <div className="flex items-center gap-3">
           <a href="#home" className="hover:scale-110 transition-transform duration-300">
             <img
@@ -71,6 +72,7 @@ export default function Header() {
             { href: "#skills", label: "Skills" },
             { href: "#resume", label: "Resume" },
             { href: "#projects", label: "Projects" },
+            { href: "#blogs", label: "Blogs" },
             { href: "#contact", label: "Contact" },
           ].map((link) => (
             <li key={link.label} className="relative group">
