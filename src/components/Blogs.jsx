@@ -83,7 +83,7 @@ const Blogs = () => {
   return (
     <section className="py-20 bg-slate-950 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
+       
         <div className="text-center mb-20">
           <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-100 text-blue-800 mb-6">
             📝 Blog & Articles
@@ -97,7 +97,7 @@ const Blogs = () => {
           </p>
         </div>
 
-        {/* Category Tabs */}
+       
         <div className="flex flex-wrap justify-center gap-3 mb-16 lg:mb-20">
           {categories.map(category => (
             <button
@@ -117,14 +117,14 @@ const Blogs = () => {
           ))}
         </div>
 
-        {/* Blog Grid */}
+       
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredPosts.map((post) => (
             <article
               key={post.id}
               className="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-2 border border-gray-100 hover:border-gray-200"
             >
-              {/* Image */}
+            
               <div className="h-48 overflow-hidden bg-slate-700">
                 <img
                   src={post.image}
@@ -134,7 +134,7 @@ const Blogs = () => {
                 />
               </div>
 
-              {/* Category Badge */}
+        
               <div className="px-6 pt-6 pb-3">
                 <span className={`inline-block px-4 py-2 rounded-full text-xs font-semibold ${
                   post.category === 'frontend' 
@@ -147,7 +147,7 @@ const Blogs = () => {
                 </span>
               </div>
 
-              {/* Content */}
+              
               <div className="px-6 pb-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-blue-600 transition-colors line-clamp-2">
                   {post.title}
@@ -157,19 +157,12 @@ const Blogs = () => {
                   {post.excerpt}
                 </p>
 
-                {/* Meta & CTA */}
+                
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-4 text-sm text-gray-500">
+                    
                     <span className="flex items-center gap-1">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                      {post.readTime}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
+                      
                       {new Date(post.date).toLocaleDateString('en-US', { 
                         year: 'numeric', 
                         month: 'short', 
