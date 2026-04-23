@@ -20,13 +20,14 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-5 md:py-8 bg-slate-950 overflow-hidden relative">
-      <div className="max-w-6xl mx-auto  px-4 sm:px-6 lg:px-8">
+    <section id="skills"
+      className="py-5 md:py-8 bg-slate-950  overflow-hidden relative">
+      <div className="max-w-6xl mx-auto   px-4 sm:px-6 lg:px-8">
 
-        <div className="mb-16 space-y-4 ">
+        <div className="mb-16 space-y-4 text-center ">
           <h2 className="text-4xl md:text-5xl font-bold text-white">Skills & Expertise</h2>
-          <div className="w-16 h-1 bg-teal-600 rounded-full"></div>
-          <p className="text-xl text-slate-400 max-w-2xl">
+          <div className="w-16 h-1 bg-teal-600 rounded-full text-center mx-auto"></div>
+          <p className="text-xl text-slate-400 max-w-2xl text-center mx-auto">
             A comprehensive overview of my technical skills and professional capabilities.
           </p>
         </div>

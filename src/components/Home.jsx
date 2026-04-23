@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="h-screen flex items-center justify-center bg-slate-950  relative overflow-hidden"
+      className="h-screen flex items-center justify-center bg-slate-950 pt-12 relative overflow-hidden"
     >
 
 
