@@ -10,7 +10,7 @@ const nav = [
   { href: "#skills", label: "Skills" },
   { href: "#resume", label: "Resume" },
   { href: "#projects", label: "Projects" },
-  { href: "#blogs", label: "Blogs" },
+
   { href: "#contact", label: "Contact" },
 ];
 export default function Header() {
@@ -72,7 +72,6 @@ export default function Header() {
             { href: "#skills", label: "Skills" },
             { href: "#resume", label: "Resume" },
             { href: "#projects", label: "Projects" },
-            { href: "#blogs", label: "Blogs" },
             { href: "#contact", label: "Contact" },
           ].map((link) => (
             <li key={link.label} className="relative group">

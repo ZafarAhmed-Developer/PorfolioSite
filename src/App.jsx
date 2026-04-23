@@ -8,7 +8,6 @@ import Projects from "./components/Projects";
 import Resume from "./components/Resume.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer";
-import Blogs from "./components/Blogs";
 function App() {
   const projectData = [
     {
@@ -42,16 +41,14 @@ function App() {
         <animatedSection>
           <Skills />
         </animatedSection>
-        <animatedSection>
-          <Projects projects={projectData} />
-        </animatedSection>
-      
-          <animatedSection>
-            <Blogs />
-          </animatedSection>
+          
           <animatedSection>
             <Resume />
           </animatedSection>
+          <animatedSection>
+          <Projects projects={projectData} />
+        </animatedSection>
+      
         <animatedSection>
           <Contact />
         </animatedSection>

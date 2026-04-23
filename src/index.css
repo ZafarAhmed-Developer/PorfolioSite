@@ -3,34 +3,35 @@
 body {
   margin: 0;
 }
-/* Mobile Horizontal Scroll Fix */
 @container (max-width: 768px) {
-  html, body, #root {
+  html,
+  body,
+  #root {
     overflow-x: hidden !important;
     width: 100vw !important;
     max-width: 100vw !important;
   }
-  
-  /* Cards mobile width fix */
-  article, div[class*="grid"] > * {
+
+  article,
+  div[class*="grid"] > * {
     max-width: 100vw !important;
     box-sizing: border-box !important;
   }
-  
-  /* Tabs mobile fix */
+
   button {
     flex-shrink: 0;
     white-space: nowrap;
   }
 }
 
-/* Extra safe mobile fix */
 @media (max-width: 640px) {
   * {
     max-width: 100% !important;
   }
-  
-  .max-w-7xl, .max-w-4xl, .max-w-2xl {
+
+  .max-w-7xl,
+  .max-w-4xl,
+  .max-w-2xl {
     max-width: 100% !important;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
