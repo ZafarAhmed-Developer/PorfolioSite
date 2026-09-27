@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Resume() {
   const oneDriveDownloadUrl =
-    "https://drive.google.com/file/d/1smElwBDPxs7f1KRyJ8KDGzpJY7ag5KVz/view?usp=sharing"; 
+    "https://drive.google.com/file/d/1KQfesVECJ-eqL1LhBHdyORSyHLrosS6b/view?usp=drive_link"; 
 
   return (
     <section id="resume" className="py-20 bg-slate-950 overflow-hidden">
